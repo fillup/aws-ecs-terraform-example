@@ -1,0 +1,45 @@
+[
+  {
+    "volumesFrom": [],
+    "memory": 128,
+    "extraHosts": null,
+    "dnsServers": null,
+    "disableNetworking": null,
+    "dnsSearchDomains": null,
+    "portMappings": [
+      {
+        "hostPort": 0,
+        "containerPort": 80,
+        "protocol": "tcp"
+      }
+    ],
+    "hostname": null,
+    "essential": true,
+    "entryPoint": [],
+    "mountPoints": [],
+    "name": "web",
+    "ulimits": null,
+    "dockerSecurityOptions": null,
+    "environment": [
+      {
+        "name": "PMA_HOST",
+        "value": "${mysql_host}"
+      },
+      {
+        "name": "PMA_ABSOLUTE_URI",
+        "value": "${hostname}"
+      }
+    ],
+    "links": [],
+    "workingDirectory": null,
+    "readonlyRootFilesystem": null,
+    "image": "phpmyadmin/phpmyadmin:latest",
+    "command": [],
+    "user": null,
+    "dockerLabels": null,
+    "logConfiguration": null,
+    "cpu": 128,
+    "privileged": null,
+    "memoryReservation": null
+  }
+]
